@@ -1,0 +1,69 @@
+* v0.7.0 -- target release date: 2006-07-29
+    + Add functional.map() and functional.filter(), versions of the
+        similarly-named builtins with sane semantics.
+    + Fix several reference counting-related bugs.
+    + The C version now works with Python 2.3
+
+### Anything above here is a roadmap
+### Anything below here is the actual changelog
+
+* v0.6 -- released: 2006-04-27
+    + Various sundry performance enhancements for the C version
+    + flip will now reverse all non-keyword arguments, as opposed to simply
+        reversing the first two as it did in 0.5.
+    + compose now features an optional unpack parameter.
+        compose(f, g, unpack=True)  == f(*g(...))
+        compose(f, g, unpack=False) == f(g(...))
+    + weakref support has been added to the C implementations of compose and
+        flip
+
+* v0.5 -- released: 2006-02-06
+    + Add a complementary module implemented in C for speed
+    + Drop the following functions:
+        - iterate
+        - foldl1
+        - foldr1
+        - scanr1
+        - scanl1
+        - drop
+        - dropWhile
+        - take
+        - takeWhile
+        - cycle
+        - repeat
+        - splitAt
+
+* v0.4 -- released: 2006-01-22
+    + Add the following functions from the Haskell Prelude:
+        - id
+        - concat
+        - concatMap
+        - splitAt
+        - compose
+    + Add an examples.py file, showing how to use some of these functions
+
+* v0.3 -- released: 2006-01-22
+    + Add the following functions from the Haskell Prelude:    
+		- repeat
+		- cycle
+		- iterate
+        - take
+        - drop
+        - flip
+        - takeWhile
+        - dropWhile
+
+* v0.2 -- released: 2006-01-21
+    + Add the following functions from the Haskell Prelude:
+        - foldl1
+        - foldr1
+        - scanl
+		- scanr
+  		- scanl1
+		- scanr1
+
+* v0.1 -- released: 2006-01-19
+	+ Initial release. We start off with the functions:
+		- partial - partial function application
+		- foldl
+		- foldr

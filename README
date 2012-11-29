@@ -1,0 +1,34 @@
+### Introduction
+
+functional provides Python users with numerous
+tools common in functional programming, such as foldl, foldr, flip, as well
+as mechanisms for partial function application and function composition.
+functional also includes sane versions of the Python builtins map() and filter(),
+written without the weird semantics of the builtin versions.
+
+functional comes in two flavours: one is written in a combination of C and
+Python, focusing on performance. The second is written in pure Python and
+emphasises code readability and portability. The pure-Python variant is also
+recommended if your setup does not allow compilation of third-party extension
+modules.
+
+### Installation
+
+Directly from PyPI:
+    1. easy_install functional
+
+From source:
+	1. Untar the .tar.gz file
+	2. cd into the resulting directory
+	3. python setup.py install
+	
+From a Python egg:
+	1. easy_install functional-x.y-py2.4.egg
+
+### Documentation
+
+Please refer to the project's website: http://oakwinter.com/code/functional/
+
+### Copyright/License
+
+See the copyright header in functionalmodule.c

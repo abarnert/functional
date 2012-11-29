@@ -1,0 +1,8 @@
+include test.py
+include functional/__init__.py
+include tests/*.py
+include setup.py
+include setup.cfg
+include README
+include CHANGELOG
+include examples.py
